@@ -36,7 +36,7 @@ func logInUser(w http.ResponseWriter, r *http.Request) {
 	fileName := "log-in.html"
 	t, _ := template.ParseFiles(fileName)
 	t.ExecuteTemplate(w, fileName, "user logged in successfully.")
-	return
+	//return
 }
 
 //signup function
@@ -56,7 +56,7 @@ func signUpUser(w http.ResponseWriter, r *http.Request) {
 	fileName := "sign-up.html"
 	t, _ := template.ParseFiles(fileName)
 	t.ExecuteTemplate(w, fileName, "New user sign-up successfully.")
-	return
+	//return
 }	
 
 func getUser(r *http.Request) users.User{
